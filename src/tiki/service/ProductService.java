@@ -40,7 +40,7 @@ public class ProductService {
         iphone2.getImgPaths().add("/path/to/img2");
         iphone2.getImgPaths().add("/path/to/img3");
         iphone2.getAttribute().setAttr(Attribute.COLOR, Color.YELLOW);
-        iphone2.getAttribute().setAttr(Attribute.STORAGE, "64Gb");
+        iphone2.getAttribute().setAttr(Attribute.STORAGE, "128Gb");
         iphone2.getAttribute().setAttr(Attribute.DESCRIPTION, "dep, gon gang, sang trong");
         iphone2.getAttribute().setAttr(Attribute.ORIGIN, "nguyen ban");
         iphone2.getAttribute().setAttr(Attribute.FACTORY_DATE, new Date());
@@ -58,7 +58,7 @@ public class ProductService {
         iphone3.getAttribute().setAttr(Attribute.COLOR, ""+Color.YELLOW +"-"+ Color.BLACK);
         iphone3.getAttribute().setAttr(Attribute.STORAGE, "64Gb");
         iphone3.getAttribute().setAttr(Attribute.DESCRIPTION, "dep, gon gang, sang trong");
-        iphone3.getAttribute().setAttr(Attribute.ORIGIN, "nguyen ban");
+        iphone3.getAttribute().setAttr(Attribute.ORIGIN, "ket hop giua truyen thong va hien dai");
         iphone3.getAttribute().setAttr(Attribute.FACTORY_DATE, new Date());
         iphone3.getAttribute().setAttr(Attribute.WEIGHT, 2.4f);
         iphone3.setStatus(Product.STATUS_COMBINE);
@@ -70,6 +70,5 @@ public class ProductService {
         System.out.println("\nProduct 1: "+iphone1);
         System.out.println("Product 2: "+iphone2);
         System.out.println("Product 3: "+iphone3);
-        
     }
 }

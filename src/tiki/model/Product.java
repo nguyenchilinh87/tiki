@@ -10,22 +10,16 @@ public class Product {
     public static final String STATUS_SINGLE = "single";
     public static final String STATUS_COMBINE = "combine";
 
-    //1. base attribute
     private String name;
     private BigDecimal salePrice;
     private BigDecimal marketPrice;
-    private final List<String> imgPaths;       // when insert to db concat and split by "|"
-    private final Attribute attribute;         // store all data type 
-
-    //3. product combine
-//    private String code;                       // code of product
-    //private final List<ProductCombine> childProduct;      // reference to code of child product when combine
-    private String status;                     // product is: single or combine
-
+    private final List<String> imgPaths;       
+    
+    private final Attribute attribute;         // store all data type of custom attribute
+    private String status;                     
     // -------------------------------- END PROPERTIES ------------------------------//
     public Product() {
         imgPaths = new ArrayList<>();
-        //  childProduct = new ArrayList<>();
         attribute = new Attribute();
     }
 
